@@ -134,5 +134,5 @@ class Slots(commands.Cog):
             self.economy.add_money(user_id, amount_to_sell*DEFAULT_BET)
         await ctx.invoke(self.client.get_command('money'))
 
-def setup(client: commands.Bot):
-    client.add_cog(Slots(client))
+async def setup(client: commands.Bot):
+    await client.add_cog(Slots(client))
