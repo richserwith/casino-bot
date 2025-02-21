@@ -1,5 +1,5 @@
 import os
-from is import getenv
+from os import getenv
 from datetime import datetime
 from pathlib import Path
 
