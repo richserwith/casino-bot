@@ -22,6 +22,8 @@ async def load_extensions():
 
 async def main():
     await load_extensions()
+    if '--private' in os.sys.argv:
+        print("Running in private mode")
     await client.start(os.getenv('TOKEN'))
 
 import asyncio

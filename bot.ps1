@@ -16,4 +16,3 @@ python /workspaces/casino-bot/discord/bot.py --private
 
 # Deploy bot with terminal mode, remote tuner, and prevent sleep
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd /workspaces/casino-bot; python discord/bot.py --private" -NoNewWindow
-
