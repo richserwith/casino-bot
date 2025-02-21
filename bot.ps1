@@ -2,7 +2,7 @@
 powercfg -change -standby-timeout-ac 0
 powercfg -change -monitor-timeout-ac 0
 
-# Run with terminal
+# Run bot.py with terminal
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd /workspaces/casino-bot; python discord/bot.py" -NoNewWindow
 
 # Remote tuner (example placeholder, replace with actual command if needed)
@@ -14,5 +14,5 @@ Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd /workspaces/ca
 # Deploy bot.py in private mode
 python /workspaces/casino-bot/discord/bot.py --private
 
-# Deploy bot with terminal mode, remote tuner, and prevent sleep
+# Deploy bot with terminal mode and prevent sleep
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd /workspaces/casino-bot; python discord/bot.py --private" -NoNewWindow
